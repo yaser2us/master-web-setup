@@ -13,7 +13,8 @@ function App() {
 
   useEffect(() => {
     const fetchMessages = () => {
-        axios.get('https://sit-maya.maybank.com.my/mayasme/mayadb/mayadb/getAllMessages')
+      axios.get('http://172.31.101.121:2443/mayadb/mayadb/getAllMessages')
+        // axios.get('https://sit-maya.maybank.com.my/mayasme/mayadb/mayadb/getAllMessages')
             .then(res => {
                 console.log(res, "formioioioioio, locallll");
                 setMessages(res.data);
